@@ -46,6 +46,7 @@ const App = () => {
 
     signInWithPhoneNumber(auth, formatPh, appVerifier)
       .then((confirmationResult) => {
+        console.log("confirmation", confirmationResult)
         window.confirmationResult = confirmationResult;
         setLoading(false);
         setShowOTP(true);
